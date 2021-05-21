@@ -24,8 +24,8 @@ jobs:
       - name: Build
         run: yarn build
 
-      - name: Deploy file to server
-        uses: wlixcc/SFTP-Deploy-Action@v1.0
+      - name: SFTP Deploy
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.1
         with:
           username: 'root'
           server: '${{ secrets.SERVER_IP }}'
